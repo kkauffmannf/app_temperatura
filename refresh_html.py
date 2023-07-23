@@ -78,6 +78,7 @@ def refresh_web():
                             fill_color = linear(temps[n])).add_to(map_object)
         
     linear.caption = "Temperaturas"
+    linear.width = 200
     map_object.add_child(linear)
         
     # Display the map
