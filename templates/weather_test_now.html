@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5eeb19be0f0faebf7bf6f8fed7a49576 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5eeb19be0f0faebf7bf6f8fed7a49576" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5eeb19be0f0faebf7bf6f8fed7a49576 = L.map(
+                "map_5eeb19be0f0faebf7bf6f8fed7a49576",
+                {
+                    center: [-33.447487, -70.673676],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b7f58f072356531133da6b52874632b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            var circle_marker_c1257052c19b13b0749ff40f56834877 = L.circleMarker(
+                [-18.35555, -70.34028],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff5a4fff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_c1257052c19b13b0749ff40f56834877.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 16.0</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Chacalluta, Arica Ap.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_632661e99185a286e075ae080d3a96dd = L.circleMarker(
+                [-18.2, -69.5625],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffbea7ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_632661e99185a286e075ae080d3a96dd.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 10.5</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Putre</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_76bda12f616317d75c233e41a359b1b1 = L.circleMarker(
+                [-18.49111, -70.30139],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff3831ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_76bda12f616317d75c233e41a359b1b1.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 17.9</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Defensa Civil, Arica</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f67d6df3cf3cfd8660b0f7e3c0ad9c48 = L.circleMarker(
+                [-18.5125, -70.26556],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff362fff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_f67d6df3cf3cfd8660b0f7e3c0ad9c48.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 18.0</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Cerro Sombrero, Arica</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_17d0a0d6b3626cb86137af8f83a64ef2 = L.circleMarker(
+                [-20.54917, -70.18111],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff2924ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_17d0a0d6b3626cb86137af8f83a64ef2.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 18.7</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Diego Aracena Iquique Ap.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac9ed935135848068df2e202c6d199c2 = L.circleMarker(
+                [-22.49806, -68.8925],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc7afff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_ac9ed935135848068df2e202c6d199c2.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 10.0</li>
+                    <li> Hora registrada: 21:59</li>
+                    <li> Nombre lugar: El Loa, Calama Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_82a6841ec1c164cf3ae115c6e3751d55 = L.circleMarker(
+                [-23.68083, -70.41111],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff4139ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_82a6841ec1c164cf3ae115c6e3751d55.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 17.4</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Universidad Católica del Norte, Antofagasta</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3f96532183ef7af987c379e52b3fd65d = L.circleMarker(
+                [-23.00583, -67.75917],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6363f3ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_3f96532183ef7af987c379e52b3fd65d.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -1.7</li>
+                    <li> Hora registrada: 21:50</li>
+                    <li> Nombre lugar: Llano de Chajnantor, observatorio APEX</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1d2c8b79c80ba9c92c101691344f1fa7 = L.circleMarker(
+                [-23.10917, -70.44333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff6357ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_1d2c8b79c80ba9c92c101691344f1fa7.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 15.5</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Mejillones</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad75ae6535a98c29b730f4ec24e44d1b = L.circleMarker(
+                [-24.6275, -70.40472],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff695cff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_ad75ae6535a98c29b730f4ec24e44d1b.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 15.2</li>
+                    <li> Hora registrada: 21:50</li>
+                    <li> Nombre lugar: Cerro Paranal, observatorio astronómico</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c30613f911d84ac8a092d6d2814e63f3 = L.circleMarker(
+                [-27.15889, -109.4325],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_c30613f911d84ac8a092d6d2814e63f3.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 21.0</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Mataveri  Isla de Pascua Ap.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_96666936bfc1bf84f43634d222a19f9c = L.circleMarker(
+                [-27.25444, -70.78111],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9d8aff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_96666936bfc1bf84f43634d222a19f9c.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 12.3</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Desierto de Atacama, Caldera  Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_38c39ef4305704cb1166d4b373cf5856 = L.circleMarker(
+                [-27.35889, -70.35333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8071ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_38c39ef4305704cb1166d4b373cf5856.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 13.9</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Copiapó Universidad de Atacama</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e77805cb712641d4badde65b3d0f798a = L.circleMarker(
+                [-28.51694, -71.01],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcbb2ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_e77805cb712641d4badde65b3d0f798a.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 9.8</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Freirina Nicolasa</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8fdb9511ff3cf070299b440fb3cd4286 = L.circleMarker(
+                [-29.91444, -71.20667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff917fff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_8fdb9511ff3cf070299b440fb3cd4286.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 13.0</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: La Florida, La Serena Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f44b091315624ad7070db05bed39020f = L.circleMarker(
+                [-29.25833, -70.73444],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f6fff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_f44b091315624ad7070db05bed39020f.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 14.0</li>
+                    <li> Hora registrada: 21:50</li>
+                    <li> Nombre lugar: Cerro la Silla, observatorio astronómico</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b51543d7e2bf94e79b261a8d4b25082e = L.circleMarker(
+                [-30.58, -71.18667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffbea7ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_b51543d7e2bf94e79b261a8d4b25082e.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 10.5</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Ovalle Escuela Agrícola</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_302450c4a2864813c75872ec97904a35 = L.circleMarker(
+                [-30.03361, -70.69722],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd8bdff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_302450c4a2864813c75872ec97904a35.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 9.1</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Vicuña, Parque Los Pimientos</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d09f2690274037b36eb3c81ad46b4147 = L.circleMarker(
+                [-30.69833, -70.95778],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb59fff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_d09f2690274037b36eb3c81ad46b4147.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 11.0</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Monte Patria, Municipalidad</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_beca402b9e21fe670c209befa089270f = L.circleMarker(
+                [-31.18805, -70.99889],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc7afff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_beca402b9e21fe670c209befa089270f.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 10.0</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Liceo Samuel Román Rojas (Combarbalá)</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_79f5e79aa680b7859b7cb69a37e8fcfc = L.circleMarker(
+                [-31.6325, -71.15194],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc9b1ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_79f5e79aa680b7859b7cb69a37e8fcfc.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 9.9</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Vivero Conaf, Illapel</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_939104e2404d550af5e8cd14870ff448 = L.circleMarker(
+                [-32.75528, -70.70694],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc9b1ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_939104e2404d550af5e8cd14870ff448.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 9.9</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: San Felipe Escuela Agrícola</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dcda6f2845e230b81f303f6d8c36eb2a = L.circleMarker(
+                [-32.94944, -71.47611],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffbba4ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_dcda6f2845e230b81f303f6d8c36eb2a.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 10.7</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Viña del Mar  Ad. (Torquemada)</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_74368326b7dc69611eb7ea52fb1d013a = L.circleMarker(
+                [-32.88139, -70.91305],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc0a9ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_74368326b7dc69611eb7ea52fb1d013a.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 10.4</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Llay Llay, Las Peñas</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_978633ae1355249c155ce2680ed40579 = L.circleMarker(
+                [-32.2225, -70.83167],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe8ccff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_978633ae1355249c155ce2680ed40579.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 8.2</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Chincolco Liceo agrícola</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b64996f3150e6a7b3ad1058cc8e69605 = L.circleMarker(
+                [-32.84555, -70.11917],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7979f1ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_b64996f3150e6a7b3ad1058cc8e69605.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -0.5</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Los Libertadores</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e55edbf9c7aecd73ab36ddf117c88f3a = L.circleMarker(
+                [-32.75889, -70.94278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc7afff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_e55edbf9c7aecd73ab36ddf117c88f3a.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 10.0</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Catemu</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_588372dd364d388481945c9abafdf5b2 = L.circleMarker(
+                [-32.78417, -71.52278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9482ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_588372dd364d388481945c9abafdf5b2.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 12.8</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Quintero, Climatológica</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5d7ca5c62d2bca3d0553e9d6b365481c = L.circleMarker(
+                [-32.56139, -71.29778],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd4baff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_5d7ca5c62d2bca3d0553e9d6b365481c.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 9.3</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Zapallar Catapilco</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e258f68aa95128fec23a12bf8e488c7 = L.circleMarker(
+                [-33.045, -71.50194],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe1c5ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_5e258f68aa95128fec23a12bf8e488c7.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 8.6</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Jardín Botánico (ex Parque Fauna), Viña del Mar</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c166d6c67c570b1c37cd7597e6e68fc3 = L.circleMarker(
+                [-33.06528, -71.55639],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc9b1ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_c166d6c67c570b1c37cd7597e6e68fc3.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 9.9</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Rodelillo, Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3d938f01b11459cf5c91120c175d9f92 = L.circleMarker(
+                [-33.45528, -70.54861],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffcddff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_3d938f01b11459cf5c91120c175d9f92.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.1</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Eulogio Sánchez, Tobalaba Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bdfaffaf78195b3c888bef9933d5b909 = L.circleMarker(
+                [-33.445, -70.68278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecece3ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_bdfaffaf78195b3c888bef9933d5b909.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 5.8</li>
+                    <li> Hora registrada: 22:05</li>
+                    <li> Nombre lugar: Quinta Normal, Santiago</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4f840693751f4f13719dfd54b9555616 = L.circleMarker(
+                [-33.37833, -70.78778],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff6d8ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_4f840693751f4f13719dfd54b9555616.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.4</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Pudahuel Santiago </li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b374f01cec08cfcf9d22a5e4ec7b388 = L.circleMarker(
+                [-33.63583, -78.83305],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffceb5ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_3b374f01cec08cfcf9d22a5e4ec7b388.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 9.6</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Juan Fernández, Estación Meteorológica.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_143bb3741ef5b73336aad9c255aff31c = L.circleMarker(
+                [-33.67028, -70.84944],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1f1e2ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_143bb3741ef5b73336aad9c255aff31c.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 6.1</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Talagante</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e07efea268016260d5cb2530ea34024 = L.circleMarker(
+                [-33.35, -70.29361],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5757f5ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_2e07efea268016260d5cb2530ea34024.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -2.4</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: El Colorado</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5ed4d55b09ab2f3a530f42bf7e487bc3 = L.circleMarker(
+                [-33.12389, -70.82805],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd9bfff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_5ed4d55b09ab2f3a530f42bf7e487bc3.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 9.0</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Polpaico</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ce696b1ddf9a38ca92c83c9374da0a8e = L.circleMarker(
+                [-33.45806, -70.94861],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e1e1e4ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_ce696b1ddf9a38ca92c83c9374da0a8e.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 5.2</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Lo Prado Cerro San Francisco</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_17d4d5bbe2dcf2dea522a61ba0fd8de0 = L.circleMarker(
+                [-33.70639, -71.00805],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe2c7ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_17d4d5bbe2dcf2dea522a61ba0fd8de0.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 8.5</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: El Paico</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_86bf4406f6fd10582e953d8f12467635 = L.circleMarker(
+                [-33.44222, -70.74667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fafae1ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_86bf4406f6fd10582e953d8f12467635.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 6.6</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: San Pablo - DASA</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3a0e4cb31a9e5c8d8e0224f0872033db = L.circleMarker(
+                [-33.26805, -70.73222],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeacdff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_3a0e4cb31a9e5c8d8e0224f0872033db.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 8.1</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Lo Pinto</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a73c9d48b983a7e24b5801c1c9357308 = L.circleMarker(
+                [-33.545, -70.54833],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#edede3ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_a73c9d48b983a7e24b5801c1c9357308.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 5.9</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Aguas Andinas, La Florida</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_68be4e4521af84d7e753fb0d27ddf3ce = L.circleMarker(
+                [-33.53055, -71.50611],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd6bcff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_68be4e4521af84d7e753fb0d27ddf3ce.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 9.2</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: San Antonio, Lo Zarate</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_614a83df34cb2a784acede7308a4d41e = L.circleMarker(
+                [-33.16222, -70.64306],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffedfff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_614a83df34cb2a784acede7308a4d41e.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.0</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Colina (Reg.)</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7c611ddc1a805a397fe4325ef9734665 = L.circleMarker(
+                [-33.11389, -70.68583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff1d4ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_7c611ddc1a805a397fe4325ef9734665.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.7</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Peldehue Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c0e2822c846d5b1bc26bfa3c32fdfe59 = L.circleMarker(
+                [-33.04944, -71.00139],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bcbce9ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_c0e2822c846d5b1bc26bfa3c32fdfe59.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 3.2</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Llanos de Caleu - La Dormida</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6388af26aa37b41d7c746b464c4c6e03 = L.circleMarker(
+                [-34.96944, -71.21694],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3d5ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_6388af26aa37b41d7c746b464c4c6e03.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.6</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: General Freire, Curicó Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_042c2290fcf302ff0c51a2a2887f00c0 = L.circleMarker(
+                [-34.215, -70.99694],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffe0ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_042c2290fcf302ff0c51a2a2887f00c0.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 6.9</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Quimávida</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8801c2ddb6fd8518fb68311b88ad5a42 = L.circleMarker(
+                [-34.19833, -70.57917],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#acacebff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_8801c2ddb6fd8518fb68311b88ad5a42.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 2.3</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Portezuelo-Codelco</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_13da1865a29d21b17d907cb8544164fc = L.circleMarker(
+                [-34.39417, -72.01861],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffac97ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_13da1865a29d21b17d907cb8544164fc.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 11.5</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Pichilemu aeródromo</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_995faae140ccba980105ec68a64e3345 = L.circleMarker(
+                [-35.37778, -71.60111],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fcfce1ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_995faae140ccba980105ec68a64e3345.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 6.7</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Panguilemo</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ee02e8d25827eadbe0834b13e989aa0e = L.circleMarker(
+                [-35.83694, -71.59278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffedd0ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_ee02e8d25827eadbe0834b13e989aa0e.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.9</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Escuela de Artillería Linares</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2a365792697ba7b6eeceb7e7dda14b2f = L.circleMarker(
+                [-36.58583, -72.03667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff8daff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_2a365792697ba7b6eeceb7e7dda14b2f.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.3</li>
+                    <li> Hora registrada: 21:59</li>
+                    <li> Nombre lugar: General Bernardo O'Higgins, Chillán Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_869482086d64d7f3b4d601d9738c1e4e = L.circleMarker(
+                [-36.78055, -73.06639],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd6bcff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_869482086d64d7f3b4d601d9738c1e4e.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 9.2</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Carriel Sur, Concepción Ap.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a6388c0a3f7cbfa66d439eadfa9e8d1f = L.circleMarker(
+                [-36.90361, -71.41],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6363f3ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_a6388c0a3f7cbfa66d439eadfa9e8d1f.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -1.7</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Termas de Chillán</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ab3388a37d3931ee1a2ab43341562d20 = L.circleMarker(
+                [-36.82805, -71.86694],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f3f3e2ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_ab3388a37d3931ee1a2ab43341562d20.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 6.2</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Chillán Mayulermo</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b0a71076c84ff7521ad1767673891f5b = L.circleMarker(
+                [-36.07555, -71.75805],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e2e2e4ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_b0a71076c84ff7521ad1767673891f5b.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 5.3</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Retiro Copihue</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d09fba4a9bd1deaa30338bf7a0f4711f = L.circleMarker(
+                [-37.39694, -72.42389],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe4c8ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_d09fba4a9bd1deaa30338bf7a0f4711f.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 8.4</li>
+                    <li> Hora registrada: 22:03</li>
+                    <li> Nombre lugar: María Dolores, Los Angeles Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_843438769f577a11009b0388a4b4acf0 = L.circleMarker(
+                [-37.79583, -72.68444],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffddc2ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_843438769f577a11009b0388a4b4acf0.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 8.8</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Angol, Húsares</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7861a1ddf4428ec9bd89c53aa5a8a334 = L.circleMarker(
+                [-38.76778, -72.63194],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe8ccff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_7861a1ddf4428ec9bd89c53aa5a8a334.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 8.2</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Maquehue, Temuco Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d4229715d0dab8f06116d3c7adbc4d6f = L.circleMarker(
+                [-38.93444, -72.65333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff1d4ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_d4229715d0dab8f06116d3c7adbc4d6f.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.7</li>
+                    <li> Hora registrada: 21:59</li>
+                    <li> Nombre lugar: La Araucanía Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e9955d38e1341382d6de367c2b1d79d0 = L.circleMarker(
+                [-38.83778, -72.69444],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff1d4ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_e9955d38e1341382d6de367c2b1d79d0.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.7</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Maquehue-UFRO</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e5abc695ad76f7b355d040650e155e11 = L.circleMarker(
+                [-38.22889, -72.34333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffedd0ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_e5abc695ad76f7b355d040650e155e11.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.9</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Victoria (Reg.)</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca517f9882757ad29226a8fa75b56063 = L.circleMarker(
+                [-39.65667, -73.08722],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fefee1ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_ca517f9882757ad29226a8fa75b56063.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 6.8</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Pichoy, Valdivia Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_242d2623f86824e77459fc72648cbf38 = L.circleMarker(
+                [-39.19, -72.11222],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffcddff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_242d2623f86824e77459fc72648cbf38.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.1</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Villarrica</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b920ba1cc67274972728125334b84daa = L.circleMarker(
+                [-39.29111, -71.91694],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffcddff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_b920ba1cc67274972728125334b84daa.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 7.1</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Pucón Aeródromo</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_364f43b56fdbe36d856987c824f3d042 = L.circleMarker(
+                [-40.61444, -73.0575],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aaaaebff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_364f43b56fdbe36d856987c824f3d042.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 2.2</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Cañal Bajo,  Osorno Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b5bd4973752f3cef87df5437e0ebeac = L.circleMarker(
+                [-40.59056, -73.11222],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bcbce9ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_3b5bd4973752f3cef87df5437e0ebeac.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 3.2</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Juan Kalt Bode (Fundación Adolfo Matthei)</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7388eedc33ecdd01db93eb78fda9ae0 = L.circleMarker(
+                [-40.31, -73.00389],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d9d9e5ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_c7388eedc33ecdd01db93eb78fda9ae0.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 4.8</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: La Unión, Agrotec</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_939bf5215bfc9e9b747b3561afc9b059 = L.circleMarker(
+                [-41.4475, -73.09583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9898edff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_939bf5215bfc9e9b747b3561afc9b059.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 1.2</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: El Tepual  Puerto Montt Ap.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7d33a3da6ea07a653a7954e9e35fdae7 = L.circleMarker(
+                [-41.47944, -72.96889],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c4c4e8ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_7d33a3da6ea07a653a7954e9e35fdae7.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 3.6</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Escuela Mirasol, Puerto Montt</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_04f6fd8c1251ad128b277dacde9472f2 = L.circleMarker(
+                [-42.78528, -72.835],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cdcde7ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_04f6fd8c1251ad128b277dacde9472f2.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 4.1</li>
+                    <li> Hora registrada: 21:59</li>
+                    <li> Nombre lugar: Nueva Chaitén</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b8691c8dd41bfeaaaf1b9853e6a4029 = L.circleMarker(
+                [-43.13361, -73.63278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c4c4e8ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_3b8691c8dd41bfeaaaf1b9853e6a4029.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 3.6</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Quellón Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b2f294715e57fe5309a8266b0bdf5309 = L.circleMarker(
+                [-43.18889, -71.85222],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9191eeff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_b2f294715e57fe5309a8266b0bdf5309.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 0.8</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Futaleufú Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0f5994c1db14da51f0d9fe75ed7e31c7 = L.circleMarker(
+                [-43.89778, -73.73944],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dddde5ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_0f5994c1db14da51f0d9fe75ed7e31c7.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 5.0</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Melinka Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b24cc0a89c2ef9dc7cf91a60d5101d1f = L.circleMarker(
+                [-45.39944, -72.67722],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#acacebff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_b24cc0a89c2ef9dc7cf91a60d5101d1f.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 2.3</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Puerto Aysén Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_856f4af5a96693a77fcbe6e3b23e722d = L.circleMarker(
+                [-45.59083, -72.10222],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6e6ef2ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_856f4af5a96693a77fcbe6e3b23e722d.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -1.1</li>
+                    <li> Hora registrada: 21:59</li>
+                    <li> Nombre lugar: Teniente Vidal, Coyhaique Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_30b960cc533018c00e4fdde115026c17 = L.circleMarker(
+                [-45.91833, -71.67778],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7f7ff0ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_30b960cc533018c00e4fdde115026c17.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -0.2</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Balmaceda Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ab73acd3bab6bb1cb074131c02f9fcaa = L.circleMarker(
+                [-45.52528, -72.09806],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8d8deeff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_ab73acd3bab6bb1cb074131c02f9fcaa.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: 0.6</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Mirador Marchant, Coyhaique</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ed6f825da468af733ddfeb0368f4df80 = L.circleMarker(
+                [-51.66722, -72.52889],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ffff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_ed6f825da468af733ddfeb0368f4df80.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -7.2</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Teniente Gallardo, Puerto Natales Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4420735cdacd30febd616a798b7ee659 = L.circleMarker(
+                [-53.00167, -70.83861],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5555f5ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_4420735cdacd30febd616a798b7ee659.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -2.5</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Carlos Ibañez, Punta Arenas Ap.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_492eeec0207e2012041bc52de4bfa49e = L.circleMarker(
+                [-53.13, -70.8875],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5c5cf4ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_492eeec0207e2012041bc52de4bfa49e.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -2.1</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Instituto de la Patagonia (Jorge Schytte)</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e58a91c11eccd0648dcd10de4bebc301 = L.circleMarker(
+                [-53.15278, -70.92639],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7979f1ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_e58a91c11eccd0648dcd10de4bebc301.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -0.5</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Punta Arenas Unidad Aeropolicial</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_30b90ae79f23eeaa764f9915435a9a60 = L.circleMarker(
+                [-52.42889, -71.41611],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5353f5ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_30b90ae79f23eeaa764f9915435a9a60.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -2.6</li>
+                    <li> Hora registrada: 21:45</li>
+                    <li> Nombre lugar: Magallanes Villa Tehuelche</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87a219847b75085b59836e12b7cd9876 = L.circleMarker(
+                [-52.77639, -69.29472],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5353f5ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_87a219847b75085b59836e12b7cd9876.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -2.6</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Cerro Sombrero, Estrecho de Magallanes</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e8385709f3bf9b6db74fde2df69d483 = L.circleMarker(
+                [-53.25361, -70.32611],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7979f1ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_2e8385709f3bf9b6db74fde2df69d483.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -0.5</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Fuentes Martínez, Porvenir Ad.</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e692f3f37ad46fc7e629cda7f0c0567 = L.circleMarker(
+                [-53.16694, -70.94528],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6969f3ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_4e692f3f37ad46fc7e629cda7f0c0567.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -1.4</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Escuela Alberto Hurtado</li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_59784198d74fbf5416254c283df43f07 = L.circleMarker(
+                [-54.05083, -68.80389],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e0efeff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": false, "weight": 1}
+            ).addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+        
+    
+            circle_marker_59784198d74fbf5416254c283df43f07.bindTooltip(
+                `<div>
+                     
+                    <ul>
+                    <li> Temperatura: -6.4</li>
+                    <li> Hora registrada: 22:00</li>
+                    <li> Nombre lugar: Pampa Guanaco, Tierra del Fuego </li>
+                    </ul>
+                    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+    var color_map_add416f8104c8595598934a62a4c50f2 = {};
+
+    
+    color_map_add416f8104c8595598934a62a4c50f2.color = d3.scale.threshold()
+              .domain([-7.2, -7.143486973947896, -7.086973947895792, -7.030460921843687, -6.973947895791583, -6.917434869739479, -6.860921843687375, -6.804408817635271, -6.747895791583167, -6.6913827655310625, -6.634869739478958, -6.578356713426854, -6.52184368737475, -6.465330661322645, -6.408817635270541, -6.352304609218437, -6.2957915831663325, -6.239278557114229, -6.182765531062125, -6.1262525050100205, -6.069739478957916, -6.013226452905812, -5.956713426853708, -5.900200400801603, -5.843687374749499, -5.787174348697395, -5.730661322645291, -5.674148296593186, -5.617635270541083, -5.5611222444889785, -5.504609218436874, -5.44809619238477, -5.391583166332666, -5.335070140280561, -5.278557114228457, -5.222044088176353, -5.1655310621242485, -5.109018036072145, -5.05250501002004, -4.9959919839679365, -4.939478957915831, -4.882965931863728, -4.826452905811624, -4.769939879759519, -4.713426853707415, -4.656913827655311, -4.6004008016032065, -4.543887775551102, -4.487374749498999, -4.430861723446894, -4.37434869739479, -4.317835671342685, -4.261322645290582, -4.204809619238477, -4.148296593186373, -4.091783567134269, -4.0352705410821645, -3.9787575150300607, -3.9222444889779564, -3.865731462925852, -3.809218436873748, -3.7527054108216436, -3.6961923847695397, -3.6396793587174354, -3.583166332665331, -3.526653306613227, -3.470140280561122, -3.4136272545090183, -3.357114228456914, -3.3006012024048097, -3.2440881763527054, -3.187575150300601, -3.1310621242484977, -3.0745490981963934, -3.018036072144289, -2.961523046092185, -2.9050100200400806, -2.8484969939879763, -2.791983967935872, -2.7354709418837686, -2.6789579158316634, -2.62244488977956, -2.565931863727455, -2.5094188376753515, -2.452905811623247, -2.396392785571143, -2.3398797595190386, -2.2833667334669343, -2.22685370741483, -2.1703406813627257, -2.1138276553106214, -2.057314629258517, -2.000801603206413, -1.9442885771543086, -1.8877755511022052, -1.8312625250501, -1.7747494989979966, -1.7182364729458914, -1.661723446893788, -1.6052104208416837, -1.5486973947895795, -1.4921843687374752, -1.4356713426853709, -1.3791583166332666, -1.3226452905811632, -1.266132264529058, -1.2096192384769546, -1.1531062124248495, -1.096593186372746, -1.0400801603206418, -0.9835671342685375, -0.9270541082164332, -0.8705410821643289, -0.8140280561122246, -0.7575150300601212, -0.701002004008016, -0.6444889779559126, -0.5879759519038075, -0.5314629258517041, -0.4749498997995998, -0.4184368737474955, -0.3619238476953912, -0.3054108216432869, -0.24889779559118264, -0.19238476953907924, -0.13587174348697406, -0.07935871743487066, -0.022845691382765487, 0.03366733466933791, 0.0901803607214422, 0.14669338677354649, 0.20320641282565077, 0.25971943887775595, 0.31623246492985935, 0.37274549098196363, 0.4292585170340679, 0.4857715430861722, 0.5422845691382765, 0.5987975951903808, 0.6553106212424842, 0.7118236472945894, 0.7683366733466928, 0.8248496993987979, 0.8813627254509013, 0.9378757515030047, 0.9943887775551099, 1.0509018036072133, 1.1074148296593185, 1.1639278557114219, 1.220440881763527, 1.2769539078156305, 1.3334669338677356, 1.389979959919839, 1.4464929859719424, 1.5030060120240476, 1.5595190380761528, 1.6160320641282562, 1.6725450901803596, 1.729058116232463, 1.78557114228457, 1.8420841683366733, 1.8985971943887767, 1.9551102204408801, 2.0116232464929853, 2.0681362725450905, 2.124649298597194, 2.1811623246492973, 2.2376753507014024, 2.294188376753506, 2.350701402805611, 2.4072144288577144, 2.4637274549098196, 2.520240480961923, 2.5767535070140264, 2.6332665330661316, 2.6897795591182367, 2.74629258517034, 2.8028056112224435, 2.8593186372745487, 2.915831663326654, 2.9723446893787573, 3.0288577154308607, 3.085370741482966, 3.1418837675350693, 3.1983967935871744, 3.254909819639278, 3.311422845691383, 3.3679358717434864, 3.42444889779559, 3.480961923847695, 3.5374749498998, 3.5939879759519036, 3.650501002004007, 3.7070140280561104, 3.7635270541082173, 3.8200400801603207, 3.876553106212424, 3.9330661322645275, 3.9895791583166327, 4.046092184368738, 4.102605210420841, 4.159118236472945, 4.21563126252505, 4.272144288577153, 4.328657314629258, 4.385170340681362, 4.441683366733467, 4.49819639278557, 4.554709418837674, 4.611222444889779, 4.667735470941884, 4.7242484969939875, 4.780761523046091, 4.837274549098194, 4.893787575150301, 4.950300601202405, 5.006813627254508, 5.0633266533066115, 5.119839679358717, 5.176352705410822, 5.232865731462925, 5.28937875751503, 5.345891783567134, 5.402404809619237, 5.458917835671342, 5.5154308617234475, 5.571943887775551, 5.628456913827654, 5.684969939879758, 5.741482965931865, 5.797995991983968, 5.8545090180360715, 5.911022044088175, 5.96753507014028, 6.024048096192385, 6.080561122244489, 6.137074148296592, 6.193587174348697, 6.250100200400801, 6.306613226452906, 6.363126252505009, 6.419639278557114, 6.476152304609218, 6.532665330661321, 6.589178356713426, 6.6456913827655315, 6.702204408817635, 6.758717434869738, 6.815230460921842, 6.871743486973949, 6.928256513026052, 6.9847695390781555, 7.041282565130259, 7.097795591182364, 7.154308617234469, 7.210821643286573, 7.267334669338676, 7.323847695390781, 7.380360721442885, 7.43687374749499, 7.493386773547093, 7.549899799599198, 7.606412825651302, 7.662925851703405, 7.719438877755512, 7.7759519038076155, 7.832464929859719, 7.888977955911822, 7.9454909819639274, 8.002004008016034, 8.058517034068135, 8.11503006012024, 8.171543086172345, 8.228056112224447, 8.284569138276552, 8.341082164328657, 8.397595190380763, 8.454108216432864, 8.51062124248497, 8.567134268537075, 8.62364729458918, 8.680160320641281, 8.736673346693387, 8.793186372745488, 8.849699398797597, 8.906212424849699, 8.962725450901804, 9.019238476953909, 9.07575150300601, 9.132264529058116, 9.18877755511022, 9.245290581162322, 9.301803607214428, 9.358316633266533, 9.414829659318638, 9.471342685370743, 9.527855711422845, 9.58436873747495, 9.640881763527055, 9.697394789579157, 9.753907815631262, 9.810420841683364, 9.866933867735472, 9.923446893787577, 9.97995991983968, 10.036472945891784, 10.092985971943886, 10.149498997995991, 10.206012024048096, 10.262525050100198, 10.319038076152307, 10.375551102204408, 10.432064128256513, 10.488577154308619, 10.54509018036072, 10.601603206412825, 10.658116232464927, 10.714629258517036, 10.771142284569141, 10.827655310621243, 10.884168336673348, 10.94068136272545, 10.997194388777555, 11.05370741482966, 11.110220440881761, 11.16673346693387, 11.223246492985972, 11.279759519038077, 11.336272545090182, 11.392785571142284, 11.449298597194389, 11.50581162324649, 11.562324649298596, 11.618837675350704, 11.675350701402806, 11.731863727454911, 11.788376753507013, 11.844889779559118, 11.901402805611223, 11.957915831663325, 12.01442885771543, 12.070941883767535, 12.12745490981964, 12.183967935871745, 12.240480961923847, 12.296993987975952, 12.353507014028054, 12.410020040080159, 12.466533066132264, 12.52304609218437, 12.579559118236475, 12.636072144288576, 12.692585170340681, 12.749098196392787, 12.805611222444888, 12.862124248496993, 12.918637274549098, 12.975150300601204, 13.031663326653309, 13.08817635270541, 13.144689378757516, 13.201202404809617, 13.257715430861722, 13.314228456913828, 13.370741482965933, 13.427254509018038, 13.48376753507014, 13.540280561122245, 13.59679358717435, 13.653306613226452, 13.709819639278557, 13.766332665330658, 13.822845691382767, 13.879358717434872, 13.935871743486974, 13.992384769539079, 14.04889779559118, 14.105410821643286, 14.161923847695391, 14.218436873747493, 14.274949899799601, 14.331462925851703, 14.387975951903808, 14.444488977955913, 14.501002004008015, 14.55751503006012, 14.614028056112222, 14.670541082164327, 14.727054108216436, 14.783567134268537, 14.840080160320642, 14.896593186372744, 14.95310621242485, 15.009619238476954, 15.066132264529056, 15.122645290581165, 15.179158316633266, 15.235671342685372, 15.292184368737477, 15.348697394789578, 15.405210420841684, 15.461723446893785, 15.51823647294589, 15.574749498997999, 15.6312625250501, 15.687775551102206, 15.744288577154308, 15.800801603206413, 15.857314629258518, 15.91382765531062, 15.970340681362725, 16.02685370741483, 16.083366733466935, 16.13987975951904, 16.196392785571142, 16.252905811623247, 16.30941883767535, 16.365931863727454, 16.42244488977956, 16.478957915831664, 16.53547094188377, 16.59198396793587, 16.648496993987976, 16.70501002004008, 16.761523046092183, 16.818036072144288, 16.87454909819639, 16.9310621242485, 16.987575150300604, 17.044088176352705, 17.10060120240481, 17.157114228456912, 17.213627254509017, 17.270140280561122, 17.326653306613224, 17.383166332665333, 17.439679358717434, 17.49619238476954, 17.552705410821645, 17.609218436873746, 17.66573146292585, 17.722244488977953, 17.778757515030062, 17.835270541082167, 17.89178356713427, 17.948296593186374, 18.004809619238475, 18.06132264529058, 18.117835671342686, 18.174348697394787, 18.230861723446896, 18.287374749498998, 18.343887775551103, 18.400400801603208, 18.45691382765531, 18.513426853707415, 18.569939879759517, 18.62645290581162, 18.68296593186373, 18.739478957915832, 18.795991983967937, 18.85250501002004, 18.909018036072144, 18.96553106212425, 19.02204408817635, 19.078557114228456, 19.13507014028056, 19.191583166332666, 19.24809619238477, 19.304609218436873, 19.36112224448898, 19.41763527054108, 19.474148296593185, 19.53066132264529, 19.587174348697395, 19.6436873747495, 19.700200400801602, 19.756713426853707, 19.813226452905813, 19.869739478957914, 19.92625250501002, 19.98276553106212, 20.03927855711423, 20.095791583166335, 20.152304609218437, 20.20881763527054, 20.265330661322643, 20.32184368737475, 20.378356713426854, 20.43486973947896, 20.491382765531064, 20.547895791583166, 20.60440881763527, 20.660921843687376, 20.717434869739478, 20.773947895791583, 20.830460921843684, 20.886973947895793, 20.9434869739479, 21.0])
+              .range(['#0000ffff', '#0101ffff', '#0202ffff', '#0303ffff', '#0404ffff', '#0505ffff', '#0606ffff', '#0707ffff', '#0808ffff', '#0909feff', '#0a0afeff', '#0b0bfeff', '#0c0cfeff', '#0d0dfeff', '#0e0efeff', '#0f0ffeff', '#1010feff', '#1111fdff', '#1212fdff', '#1313fdff', '#1414fdff', '#1515fdff', '#1616fdff', '#1717fdff', '#1818fdff', '#1919fcff', '#1a1afcff', '#1b1bfcff', '#1c1cfcff', '#1d1dfcff', '#1e1efcff', '#1f1ffcff', '#2020fcff', '#2121fbff', '#2222fbff', '#2323fbff', '#2424fbff', '#2525fbff', '#2626fbff', '#2828fbff', '#2929fbff', '#2a2afaff', '#2b2bfaff', '#2c2cfaff', '#2d2dfaff', '#2e2efaff', '#2f2ffaff', '#3030faff', '#3131faff', '#3232f9ff', '#3333f9ff', '#3434f9ff', '#3535f9ff', '#3636f9ff', '#3737f9ff', '#3838f9ff', '#3939f9ff', '#3a3af8ff', '#3b3bf8ff', '#3c3cf8ff', '#3d3df8ff', '#3e3ef8ff', '#3f3ff8ff', '#4040f8ff', '#4141f8ff', '#4242f7ff', '#4343f7ff', '#4444f7ff', '#4545f7ff', '#4646f7ff', '#4747f7ff', '#4848f7ff', '#4949f7ff', '#4a4af6ff', '#4b4bf6ff', '#4c4cf6ff', '#4d4df6ff', '#4f4ff6ff', '#5050f6ff', '#5151f6ff', '#5252f6ff', '#5353f5ff', '#5454f5ff', '#5555f5ff', '#5656f5ff', '#5757f5ff', '#5858f5ff', '#5959f5ff', '#5a5af5ff', '#5b5bf4ff', '#5c5cf4ff', '#5d5df4ff', '#5e5ef4ff', '#5f5ff4ff', '#6060f4ff', '#6161f4ff', '#6262f4ff', '#6363f3ff', '#6464f3ff', '#6565f3ff', '#6666f3ff', '#6767f3ff', '#6868f3ff', '#6969f3ff', '#6a6af3ff', '#6b6bf2ff', '#6c6cf2ff', '#6d6df2ff', '#6e6ef2ff', '#6f6ff2ff', '#7070f2ff', '#7171f2ff', '#7272f2ff', '#7373f1ff', '#7474f1ff', '#7575f1ff', '#7777f1ff', '#7878f1ff', '#7979f1ff', '#7a7af1ff', '#7b7bf1ff', '#7c7cf0ff', '#7d7df0ff', '#7e7ef0ff', '#7f7ff0ff', '#8080f0ff', '#8181f0ff', '#8282f0ff', '#8383f0ff', '#8484efff', '#8585efff', '#8686efff', '#8787efff', '#8888efff', '#8989efff', '#8a8aefff', '#8b8befff', '#8c8ceeff', '#8d8deeff', '#8e8eeeff', '#8f8feeff', '#9090eeff', '#9191eeff', '#9292eeff', '#9393eeff', '#9494edff', '#9595edff', '#9696edff', '#9797edff', '#9898edff', '#9999edff', '#9a9aedff', '#9b9bedff', '#9c9cecff', '#9e9eecff', '#9f9fecff', '#a0a0ecff', '#a1a1ecff', '#a2a2ecff', '#a3a3ecff', '#a4a4ecff', '#a5a5ebff', '#a6a6ebff', '#a7a7ebff', '#a8a8ebff', '#a9a9ebff', '#aaaaebff', '#ababebff', '#acacebff', '#adadeaff', '#aeaeeaff', '#afafeaff', '#b0b0eaff', '#b1b1eaff', '#b2b2eaff', '#b3b3eaff', '#b4b4eaff', '#b5b5e9ff', '#b6b6e9ff', '#b7b7e9ff', '#b8b8e9ff', '#b9b9e9ff', '#babae9ff', '#bbbbe9ff', '#bcbce9ff', '#bdbde8ff', '#bebee8ff', '#bfbfe8ff', '#c0c0e8ff', '#c1c1e8ff', '#c2c2e8ff', '#c3c3e8ff', '#c5c5e8ff', '#c6c6e7ff', '#c7c7e7ff', '#c8c8e7ff', '#c9c9e7ff', '#cacae7ff', '#cbcbe7ff', '#cccce7ff', '#cdcde7ff', '#cecee6ff', '#cfcfe6ff', '#d0d0e6ff', '#d1d1e6ff', '#d2d2e6ff', '#d3d3e6ff', '#d4d4e6ff', '#d5d5e6ff', '#d6d6e5ff', '#d7d7e5ff', '#d8d8e5ff', '#d9d9e5ff', '#dadae5ff', '#dbdbe5ff', '#dcdce5ff', '#dddde5ff', '#dedee4ff', '#dfdfe4ff', '#e0e0e4ff', '#e1e1e4ff', '#e2e2e4ff', '#e3e3e4ff', '#e4e4e4ff', '#e5e5e4ff', '#e6e6e3ff', '#e7e7e3ff', '#e8e8e3ff', '#e9e9e3ff', '#eaeae3ff', '#ebebe3ff', '#edede3ff', '#eeeee3ff', '#efefe2ff', '#f0f0e2ff', '#f1f1e2ff', '#f2f2e2ff', '#f3f3e2ff', '#f4f4e2ff', '#f5f5e2ff', '#f6f6e2ff', '#f7f7e1ff', '#f8f8e1ff', '#f9f9e1ff', '#fafae1ff', '#fbfbe1ff', '#fcfce1ff', '#fdfde1ff', '#fefee1ff', '#ffffe0ff', '#ffffe0ff', '#fffedfff', '#fffddeff', '#fffcddff', '#fffbdcff', '#fffadbff', '#fff9dbff', '#fff8daff', '#fff7d9ff', '#fff6d8ff', '#fff5d7ff', '#fff4d6ff', '#fff3d5ff', '#fff2d4ff', '#fff1d3ff', '#fff0d2ff', '#ffefd2ff', '#ffeed1ff', '#ffedd0ff', '#ffebcfff', '#ffeaceff', '#ffe9cdff', '#ffe8ccff', '#ffe7cbff', '#ffe6caff', '#ffe5c9ff', '#ffe4c8ff', '#ffe3c8ff', '#ffe2c7ff', '#ffe1c6ff', '#ffe0c5ff', '#ffdfc4ff', '#ffdec3ff', '#ffddc2ff', '#ffdcc1ff', '#ffdbc0ff', '#ffdabfff', '#ffd9bfff', '#ffd8beff', '#ffd7bdff', '#ffd6bcff', '#ffd5bbff', '#ffd4baff', '#ffd3b9ff', '#ffd2b8ff', '#ffd1b7ff', '#ffd0b6ff', '#ffcfb6ff', '#ffceb5ff', '#ffcdb4ff', '#ffccb3ff', '#ffcbb2ff', '#ffcab1ff', '#ffc9b0ff', '#ffc8afff', '#ffc7aeff', '#ffc6adff', '#ffc5adff', '#ffc3acff', '#ffc2abff', '#ffc1aaff', '#ffc0a9ff', '#ffbfa8ff', '#ffbea7ff', '#ffbda6ff', '#ffbca5ff', '#ffbba4ff', '#ffbaa4ff', '#ffb9a3ff', '#ffb8a2ff', '#ffb7a1ff', '#ffb6a0ff', '#ffb59fff', '#ffb49eff', '#ffb39dff', '#ffb29cff', '#ffb19bff', '#ffb09bff', '#ffaf9aff', '#ffae99ff', '#ffad98ff', '#ffac97ff', '#ffab96ff', '#ffaa95ff', '#ffa994ff', '#ffa893ff', '#ffa792ff', '#ffa692ff', '#ffa591ff', '#ffa490ff', '#ffa38fff', '#ffa28eff', '#ffa18dff', '#ffa08cff', '#ff9f8bff', '#ff9e8aff', '#ff9c89ff', '#ff9b89ff', '#ff9a88ff', '#ff9987ff', '#ff9886ff', '#ff9785ff', '#ff9684ff', '#ff9583ff', '#ff9482ff', '#ff9381ff', '#ff9280ff', '#ff917fff', '#ff907fff', '#ff8f7eff', '#ff8e7dff', '#ff8d7cff', '#ff8c7bff', '#ff8b7aff', '#ff8a79ff', '#ff8978ff', '#ff8877ff', '#ff8776ff', '#ff8676ff', '#ff8575ff', '#ff8474ff', '#ff8373ff', '#ff8272ff', '#ff8171ff', '#ff8070ff', '#ff7f6fff', '#ff7e6eff', '#ff7d6dff', '#ff7c6dff', '#ff7b6cff', '#ff7a6bff', '#ff796aff', '#ff7869ff', '#ff7768ff', '#ff7567ff', '#ff7466ff', '#ff7365ff', '#ff7264ff', '#ff7164ff', '#ff7063ff', '#ff6f62ff', '#ff6e61ff', '#ff6d60ff', '#ff6c5fff', '#ff6b5eff', '#ff6a5dff', '#ff695cff', '#ff685bff', '#ff675bff', '#ff665aff', '#ff6559ff', '#ff6458ff', '#ff6357ff', '#ff6256ff', '#ff6155ff', '#ff6054ff', '#ff5f53ff', '#ff5e52ff', '#ff5d52ff', '#ff5c51ff', '#ff5b50ff', '#ff5a4fff', '#ff594eff', '#ff584dff', '#ff574cff', '#ff564bff', '#ff554aff', '#ff5449ff', '#ff5349ff', '#ff5248ff', '#ff5147ff', '#ff5046ff', '#ff4f45ff', '#ff4d44ff', '#ff4c43ff', '#ff4b42ff', '#ff4a41ff', '#ff4940ff', '#ff483fff', '#ff473fff', '#ff463eff', '#ff453dff', '#ff443cff', '#ff433bff', '#ff423aff', '#ff4139ff', '#ff4038ff', '#ff3f37ff', '#ff3e36ff', '#ff3d36ff', '#ff3c35ff', '#ff3b34ff', '#ff3a33ff', '#ff3932ff', '#ff3831ff', '#ff3730ff', '#ff362fff', '#ff352eff', '#ff342dff', '#ff332dff', '#ff322cff', '#ff312bff', '#ff302aff', '#ff2f29ff', '#ff2e28ff', '#ff2d27ff', '#ff2c26ff', '#ff2b25ff', '#ff2a24ff', '#ff2924ff', '#ff2823ff', '#ff2622ff', '#ff2521ff', '#ff2420ff', '#ff231fff', '#ff221eff', '#ff211dff', '#ff201cff', '#ff1f1bff', '#ff1e1bff', '#ff1d1aff', '#ff1c19ff', '#ff1b18ff', '#ff1a17ff', '#ff1916ff', '#ff1815ff', '#ff1714ff', '#ff1613ff', '#ff1512ff', '#ff1412ff', '#ff1311ff', '#ff1210ff', '#ff110fff', '#ff100eff', '#ff0f0dff', '#ff0e0cff', '#ff0d0bff', '#ff0c0aff', '#ff0b09ff', '#ff0a09ff', '#ff0908ff', '#ff0807ff', '#ff0706ff', '#ff0605ff', '#ff0504ff', '#ff0403ff', '#ff0302ff', '#ff0201ff', '#ff0100ff', '#ff0000ff']);
+    
+
+    color_map_add416f8104c8595598934a62a4c50f2.x = d3.scale.linear()
+              .domain([-7.2, 21.0])
+              .range([0, 450 - 50]);
+
+    color_map_add416f8104c8595598934a62a4c50f2.legend = L.control({position: 'topright'});
+    color_map_add416f8104c8595598934a62a4c50f2.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_add416f8104c8595598934a62a4c50f2.legend.addTo(map_5eeb19be0f0faebf7bf6f8fed7a49576);
+
+    color_map_add416f8104c8595598934a62a4c50f2.xAxis = d3.svg.axis()
+        .scale(color_map_add416f8104c8595598934a62a4c50f2.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([-7.2, 6.8999999999999995, 21.0]);
+
+    color_map_add416f8104c8595598934a62a4c50f2.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_add416f8104c8595598934a62a4c50f2.g = color_map_add416f8104c8595598934a62a4c50f2.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_add416f8104c8595598934a62a4c50f2.g.selectAll("rect")
+        .data(color_map_add416f8104c8595598934a62a4c50f2.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_add416f8104c8595598934a62a4c50f2.x(color_map_add416f8104c8595598934a62a4c50f2.color.domain()[i - 1]) : color_map_add416f8104c8595598934a62a4c50f2.x.range()[0],
+            x1: i < color_map_add416f8104c8595598934a62a4c50f2.color.domain().length ? color_map_add416f8104c8595598934a62a4c50f2.x(color_map_add416f8104c8595598934a62a4c50f2.color.domain()[i]) : color_map_add416f8104c8595598934a62a4c50f2.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_add416f8104c8595598934a62a4c50f2.g.call(color_map_add416f8104c8595598934a62a4c50f2.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("Temperaturas");
+</script>
+</html>
