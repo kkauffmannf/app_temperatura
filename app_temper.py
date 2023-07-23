@@ -14,6 +14,8 @@ app.config.from_object(Config())
 # initialize scheduler
 scheduler = APScheduler()
 
+refresh_web()
+
 # interval example
 @scheduler.task('interval', id='do_refresh_template', seconds=300, misfire_grace_time=900)
 def refresh_template():
