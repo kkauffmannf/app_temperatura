@@ -4,12 +4,24 @@ import json
 from datetime import timedelta
 import folium
 import branca.colormap as cm
+from pathlib import Path
+from dotenv import load_dotenv
+import os
+
+# define path and load credentials
+
+local_path = '/home/karla/Documents/Incendios/app_temperatura/'
+env_path = Path(f'{local_path}.') / '.env'
+load_dotenv(dotenv_path=env_path)
+DGAC_EMAIL = os.environ.get('DGAC_EMAIL')
+DGAC_APIKEY = os.environ.get('DGAC_APIKEY')
 
 # hace un request a la API de la direccion meteorologica de Chile
 
 def refresh_web():
 
-    url = 'https://climatologia.meteochile.gob.cl/application/productos/datosRecientesRedEma'
+    # url = 'https://climatologia.meteochile.gob.cl/application/productos/datosRecientesRedEma'
+    url = 'https://climatologia.meteochile.gob.cl/application/servicios/getDatosRecientesRedEma?usuario=' + DGAC_EMAIL + '&token=' + DGAC_APIKEY
     response = json.loads(requests.get(url).text)
     df_temp = pd.json_normalize(response['datosEstaciones'])
     df_temp['estacion.nombreEstacion'] = df_temp['estacion.nombreEstacion'].apply(lambda x: x.encode('latin_1').decode('utf8'))
