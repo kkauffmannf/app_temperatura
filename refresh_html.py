@@ -46,12 +46,13 @@ def refresh_web():
     df_temp['estacion.longitud'] = pd.to_numeric(df_temp['estacion.longitud'])
     df_temp.dropna(inplace=True)
 
-    # Se le restan 4 horas para que quede en la hora de Chile continental. Se pasa
+    # Se pasa a la hora de Chile continental. Se pasa
     # a string, porque al llevarlo a lista (necesario para el mapa) se pierde el 
     # formato original
 
     df_temp['momento'] = pd.to_datetime(df_temp.momento, format='%Y-%m-%d %H:%M:%S')
-    df_temp['momento'] = df_temp['momento']- timedelta(hours=4, minutes=0)
+    df_temp['momento'] = df_temp['momento'].apply(lambda x: x.tz_localize('utc'))
+    df_temp['momento'] = df_temp['momento'].apply(lambda x: x.tz_convert('America/Santiago'))   
     df_temp['momento'] = df_temp['momento'].dt.strftime('%H:%M')
     df_temp['momento'] = df_temp['momento'].astype(str)
 
